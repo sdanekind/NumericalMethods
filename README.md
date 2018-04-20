@@ -15,5 +15,3 @@ I intend for these functions to be used in introductory numerical methods classe
 7. The function will return the desired outputs, based on the inputs given. 
 
 
-Adding stuff
-
