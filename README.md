@@ -1,17 +1,23 @@
-# NumericalMethods README
+# Simpson README
 
-The Numerical Methods repository contains MATLAB functions for LU decomposition, false position, and Simpson’s 1/3 Rule. These functions are used for approximations in numerical methods. 
 
-## Intended use
-I intend for these functions to be used in introductory numerical methods classes. These functions can be used by students to help learn different approximation methods and matrix math. Calling the functions, and inputting the correct data, will give an output for each method. 
+## Purpose of Algorithm
+I intend for this algorithm to be used to approximate the area bounded by data points on a graph by the Simpsons 1/3 Rule and the trapezoidal method. The function outputs an approximation for the integral of the experimental data. If there is an even number of intervals between data points, only the Simpsons 1/3 Rule will be used. If there is an odd number of intervals, the Simpsons 1/3 Rule will be used for all intervals except the last; the last interval will be approximated using a single application of the trapezoidal rule. 
 
-### Example Usage
-1. Open MATLAB
-2. Open the desired function file in MATLAB
-3. Create a new script from which to call the function.
-4. Declare all inputs variables needed for the function. 
-5. Call the function
-6. Run the script.
-7. The function will return the desired outputs, based on the inputs given. 
+## Inputs
+* x - vector containing experimental data points
+* y - vector containing experimental data points, the function will integrate function values y with respect to x
+
+## Outputs
+* I - estimated value of the integral of the function values y with respect to x
+
+## Limitations
+* the function will not work if the inputs are not the same length
+* the function will not work if the x input is not equally spaced
+
+
+## Other Information
+* the function will warn the user if the trapezoidal rule had to be used on the last interval
+
 
 
